@@ -95,7 +95,7 @@
 [debug] [2025-06-19T03:37:39.080Z] Checked if tokens are valid: true, expires at: 1750306639163
 [debug] [2025-06-19T03:37:39.080Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config [none]
 [debug] [2025-06-19T03:37:39.817Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config 200
-[debug] [2025-06-19T03:37:39.817Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"AIzaSyCP9-Bit0PHmYBD69IIesgQwEwQcHFblxw","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
+[debug] [2025-06-19T03:37:39.817Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"place_api_key_here","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
 [debug] [2025-06-19T03:37:39.824Z] Checked if tokens are valid: true, expires at: 1750306639163
 [debug] [2025-06-19T03:37:39.824Z] Checked if tokens are valid: true, expires at: 1750306639163
 [debug] [2025-06-19T03:37:39.824Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog [none]
@@ -145,7 +145,7 @@
 [debug] [2025-06-19T03:58:11.158Z] Checked if tokens are valid: true, expires at: 1750306639163
 [debug] [2025-06-19T03:58:11.158Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config [none]
 [debug] [2025-06-19T03:58:11.903Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config 200
-[debug] [2025-06-19T03:58:11.904Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"AIzaSyCP9-Bit0PHmYBD69IIesgQwEwQcHFblxw","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
+[debug] [2025-06-19T03:58:11.904Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"place_api_key_here","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
 [debug] [2025-06-19T03:58:11.911Z] Checked if tokens are valid: true, expires at: 1750306639163
 [debug] [2025-06-19T03:58:11.911Z] Checked if tokens are valid: true, expires at: 1750306639163
 [debug] [2025-06-19T03:58:11.911Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog [none]
@@ -197,7 +197,7 @@
 [debug] [2025-06-19T04:00:55.475Z] Checked if tokens are valid: true, expires at: 1750306639163
 [debug] [2025-06-19T04:00:55.475Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config [none]
 [debug] [2025-06-19T04:00:55.945Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config 200
-[debug] [2025-06-19T04:00:55.945Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"AIzaSyCP9-Bit0PHmYBD69IIesgQwEwQcHFblxw","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
+[debug] [2025-06-19T04:00:55.945Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"place_api_key_her","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
 [debug] [2025-06-19T04:00:55.950Z] Checked if tokens are valid: true, expires at: 1750306639163
 [debug] [2025-06-19T04:00:55.950Z] Checked if tokens are valid: true, expires at: 1750306639163
 [debug] [2025-06-19T04:00:55.950Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog [none]
@@ -254,7 +254,7 @@
 [debug] [2025-06-19T04:02:31.236Z] Checked if tokens are valid: true, expires at: 1750309348460
 [debug] [2025-06-19T04:02:31.236Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config [none]
 [debug] [2025-06-19T04:02:31.725Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config 200
-[debug] [2025-06-19T04:02:31.725Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"AIzaSyCP9-Bit0PHmYBD69IIesgQwEwQcHFblxw","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
+[debug] [2025-06-19T04:02:31.725Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"place_api_key_her","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
 [debug] [2025-06-19T04:02:31.731Z] Checked if tokens are valid: true, expires at: 1750309348460
 [debug] [2025-06-19T04:02:31.731Z] Checked if tokens are valid: true, expires at: 1750309348460
 [debug] [2025-06-19T04:02:31.731Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog [none]
@@ -303,7 +303,7 @@
 [debug] [2025-06-19T04:03:03.976Z] Checked if tokens are valid: true, expires at: 1750309348460
 [debug] [2025-06-19T04:03:03.977Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config [none]
 [debug] [2025-06-19T04:03:04.664Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config 200
-[debug] [2025-06-19T04:03:04.664Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"AIzaSyCP9-Bit0PHmYBD69IIesgQwEwQcHFblxw","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
+[debug] [2025-06-19T04:03:04.664Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"place_api_key_her","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
 [debug] [2025-06-19T04:03:04.669Z] Checked if tokens are valid: true, expires at: 1750309348460
 [debug] [2025-06-19T04:03:04.670Z] Checked if tokens are valid: true, expires at: 1750309348460
 [debug] [2025-06-19T04:03:04.670Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog [none]
