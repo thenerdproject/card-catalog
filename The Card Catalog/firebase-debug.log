@@ -39,7 +39,7 @@
 [debug] [2025-06-19T03:33:59.345Z] Checked if tokens are valid: true, expires at: 1750306639163
 [debug] [2025-06-19T03:33:59.345Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config [none]
 [debug] [2025-06-19T03:33:59.942Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config 200
-[debug] [2025-06-19T03:33:59.942Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"AIzaSyCP9-Bit0PHmYBD69IIesgQwEwQcHFblxw","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
+[debug] [2025-06-19T03:33:59.942Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"place_api_key_here","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
 [debug] [2025-06-19T03:33:59.947Z] Checked if tokens are valid: true, expires at: 1750306639163
 [debug] [2025-06-19T03:33:59.947Z] Checked if tokens are valid: true, expires at: 1750306639163
 [debug] [2025-06-19T03:33:59.948Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog [none]
