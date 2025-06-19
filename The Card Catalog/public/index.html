@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Card Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Card Catalog</h1>
+        <p>Master Database & Personal Collection Manager</p>
+    </header>
+    
+    <nav>
+        <button class="nav-button active" onclick="showSection('database')">Card Database</button>
+        <button class="nav-button" onclick="showSection('collection')">My Collection</button>
+        <button class="nav-button database" onclick="showSection('add-to-database')">Add to Database</button>
+        <button class="nav-button database" onclick="showSection('bulk-database')">Bulk Add to Database</button>
+        <button class="nav-button" onclick="showSection('manage')">Import/Export</button>
+    </nav>
+    
+    <div class="content">
+        <!-- Card Database Section -->
+        <div id="database-section">
+            <div class="database-note">
+                <strong>📚 Master Card Database</strong><br>
+                This is the master database of all available cards. Anyone can browse this to see what cards exist. Use the purple "Add to Database" buttons to expand the database for everyone.
+            </div>
+            
+            <div class="stats">
+                <div class="stat-card database">
+                    <div class="stat-number" id="database-total">0</div>
+                    <div>Cards in Database</div>
+                </div>
+                <div class="stat-card database">
+                    <div class="stat-number" id="database-sets">0</div>
+                    <div>Sets in Database</div>
+                </div>
+                <div class="stat-card database">
+                    <div class="stat-number" id="database-types">0</div>
+                    <div>Card Types</div>
+                </div>
+            </div>
+            
+            <div id="database-display">
+                <p>No cards in the database yet. Use "Add to Database" to start building the master catalog!</p>
+            </div>
+        </div>
+        
+        <!-- My Collection Section -->
+        <div id="collection-section" class="hidden">
+            <div class="collection-note">
+                <strong>🎯 My Personal Collection</strong><br>
+                This shows only the cards YOU own from the master database. Green cards are in your collection, gray cards are ones you don't have yet but exist in the database.
+            </div>
+            
+            <div class="stats">
+                <div class="stat-card collection">
+                    <div class="stat-number" id="collection-owned">0</div>
+                    <div>Cards Owned</div>
+                </div>
+                <div class="stat-card collection">
+                    <div class="stat-number" id="collection-total">0</div>
+                    <div>Cards Available</div>
+                </div>
+                <div class="stat-card collection">
+                    <div class="stat-number" id="completion-rate">0%</div>
+                    <div>Collection Rate</div>
+                </div>
+            </div>
+            
+            <div id="collection-display">
+                <p>No cards in your personal collection yet. Browse the database and add cards to your collection!</p>
+            </div>
+        </div>
+        
+        <!-- Add to Database Section -->
+        <div id="add-to-database-section" class="hidden">
+            <div class="database-note">
+                <strong>📚 Add Cards to Master Database</strong><br>
+                Add individual cards to the master database that everyone can see. This does NOT add them to your personal collection automatically.
+            </div>
+            
+            <form id="add-database-form">
+                <div class="form-section">
+                    <h3>Card Details</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="db-card-type">Card Type *</label>
+                            <input type="text" id="db-card-type" placeholder="e.g., Pokemon, Baseball, Basketball" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="db-card-year">Year *</label>
+                            <input type="number" id="db-card-year" placeholder="e.g., 2023" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="db-card-set">Set Name *</label>
+                            <input type="text" id="db-card-set" placeholder="e.g., Base Set, Topps Series 1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="db-card-number">Card Number *</label>
+                            <input type="text" id="db-card-number" placeholder="e.g., 001, 25/100, SP1" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="db-card-name">Card Name *</label>
+                            <input type="text" id="db-card-name" placeholder="e.g., Pikachu, Babe Ruth" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Card Images</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Front Image</label>
+                            <div class="image-upload" onclick="document.getElementById('db-front-image').click()">
+                                <p>Click to upload front image</p>
+                                <input type="file" id="db-front-image" accept="image/*" style="display: none;" onchange="previewImage(this, 'db-front-preview')">
+                            </div>
+                            <img class="image-preview hidden" id="db-front-preview">
+                        </div>
+                        <div class="form-group">
+                            <label>Back Image</label>
+                            <div class="image-upload" onclick="document.getElementById('db-back-image').click()">
+                                <p>Click to upload back image</p>
+                                <input type="file" id="db-back-image" accept="image/*" style="display: none;" onchange="previewImage(this, 'db-back-preview')">
+                            </div>
+                            <img class="image-preview hidden" id="db-back-preview">
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-purple">Add Card to Database</button>
+            </form>
+        </div>
+        
+        <!-- Bulk Add to Database Section -->
+        <div id="bulk-database-section" class="hidden">
+            <div class="database-note">
+                <strong>📚 Bulk Add to Master Database</strong><br>
+                Add multiple cards to the master database at once. Perfect for adding entire sets that everyone can then choose from for their collections.
+            </div>
+            
+            <div class="form-section">
+                <h3>Set Information</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bulk-db-type">Card Type *</label>
+                        <input type="text" id="bulk-db-type" placeholder="e.g., Pokemon, Baseball">
+                    </div>
+                    <div class="form-group">
+                        <label for="bulk-db-year">Year *</label>
+                        <input type="number" id="bulk-db-year" placeholder="e.g., 2023">
+                    </div>
+                    <div class="form-group">
+                        <label for="bulk-db-set">Set Name *</label>
+                        <input type="text" id="bulk-db-set" placeholder="e.g., Base Set">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-purple" onclick="startBulkDatabaseAdd()">Start Adding Cards to Database</button>
+            </div>
+            
+            <div id="bulk-db-cards-section" class="hidden">
+                <h3>Add Cards to Database</h3>
+                <div id="bulk-db-cards-container">
+                    <!-- Cards will be added here dynamically -->
+                </div>
+                <button type="button" class="btn btn-secondary" onclick="addBulkDatabaseCardRow()">+ Add Another Card</button>
+                <button type="button" class="btn btn-purple" onclick="saveBulkDatabaseCards()">Save All Cards to Database</button>
+            </div>
+        </div>
+        
+        <!-- Import/Export Section -->
+        <div id="manage-section" class="hidden">
+            <h2>Import/Export Data</h2>
+            
+            <div class="csv-section">
+                <h3>Import Database from CSV</h3>
+                <p>Upload a CSV file to add cards to the master database. Format: Type, Year, Set, Number, Name</p>
+                <input type="file" id="csv-database-file" accept=".csv" onchange="importDatabaseCSV()">
+                <button class="btn btn-purple" onclick="document.getElementById('csv-database-file').click()">Import to Database</button>
+            </div>
+            
+            <div class="csv-section">
+                <h3>Import Personal Collection from CSV</h3>
+                <p>Upload a CSV file to mark cards as owned in your collection. Format: Type, Year, Set, Number, Name, Condition, Owned</p>
+                <input type="file" id="csv-collection-file" accept=".csv" onchange="importCollectionCSV()">
+                <button class="btn" onclick="document.getElementById('csv-collection-file').click()">Import to Collection</button>
+            </div>
+            
+            <div class="csv-section">
+                <h3>Export Data</h3>
+                <button class="btn btn-purple" onclick="exportDatabaseCSV()">Download Database as CSV</button>
+                <button class="btn" onclick="exportCollectionCSV()">Download My Collection as CSV</button>
+            </div>
+            
+            <div class="csv-section">
+                <h3>Clear Data</h3>
+                <button class="btn btn-danger" onclick="clearDatabase()">Clear Master Database</button>
+                <button class="btn btn-danger" onclick="clearCollection()">Clear My Collection</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

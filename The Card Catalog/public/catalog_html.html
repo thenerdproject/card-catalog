@@ -1,0 +1,64 @@
+<div class="catalog-form">
+    <!-- Step 1: Type -->
+    <div class="form-step active" id="step-type">
+        <h2>Select Card Type</h2>
+        <p>Choose the type of cards you want to browse</p>
+        <div class="option-grid" id="type-options">
+            <!-- Options will be populated by JavaScript -->
+        </div>
+        <div class="form-navigation">
+            <button class="btn" id="next-type" onclick="nextStep()" disabled>Next Step</button>
+        </div>
+    </div>
+
+    <!-- Step 2: Year -->
+    <div class="form-step" id="step-year">
+        <h2>Select Year</h2>
+        <p>Choose the year of the cards</p>
+        <div class="option-grid" id="year-options">
+            <!-- Years will be populated based on selected type -->
+        </div>
+        <div class="form-navigation">
+            <button class="btn btn-secondary" onclick="prevStep()">Previous</button>
+            <button class="btn" id="next-year" onclick="nextStep()" disabled>Next Step</button>
+        </div>
+    </div>
+
+    <!-- Step 3: Set -->
+    <div class="form-step" id="step-set">
+        <h2>Select Set</h2>
+        <p>Choose the specific card set</p>
+        <div class="option-grid" id="set-options">
+            <!-- Sets will be populated based on selected type and year -->
+        </div>
+        <div class="form-navigation">
+            <button class="btn btn-secondary" onclick="prevStep()">Previous</button>
+            <button class="btn" id="view-cards" onclick="showCards()" disabled>View Cards</button>
+        </div>
+    </div>
+</div>
+
+<!-- Card Display -->
+<div class="card-catalog" id="card-display" style="display: none;">
+    <div class="catalog-header">
+        <div class="breadcrumb">
+            <span id="breadcrumb-text"></span>
+        </div>
+        <button class="btn btn-secondary" onclick="resetCatalog()">Start Over</button>
+    </div>
+    <table class="cards-table">
+        <thead>
+            <tr>
+                <th>Card Front</th>
+                <th>Card Back</th>
+                <th>Own</th>
+                <th>Quality</th>
+                <th>Card #</th>
+                <th>Card Name</th>
+            </tr>
+        </thead>
+        <tbody id="cards-tbody">
+            <!-- Cards will be populated here -->
+        </tbody>
+    </table>
+</div>

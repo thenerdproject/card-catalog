@@ -1,0 +1,101 @@
+<h2 style="margin-bottom: 30px; color: #333;">Manage Your Catalog</h2>
+
+<div class="management-grid">
+    <!-- Add Card Type -->
+    <div class="management-card">
+        <h3>Add Card Type</h3>
+        <div>
+            <label class="form-label">Type Name:</label>
+            <input type="text" id="new-type-name" class="form-input" placeholder="e.g., Soccer, Hockey, Magic">
+        </div>
+        <div>
+            <label class="form-label">Icon (Emoji):</label>
+            <input type="text" id="new-type-icon" class="form-input" placeholder="⚽" maxlength="2">
+        </div>
+        <div>
+            <label class="form-label">Description:</label>
+            <input type="text" id="new-type-desc" class="form-input" placeholder="e.g., FIFA World Cup cards">
+        </div>
+        <button class="btn" onclick="addCardType()" style="width: 100%;">Add Card Type</button>
+    </div>
+
+    <!-- Add Year -->
+    <div class="management-card">
+        <h3>Add Year</h3>
+        <div>
+            <label class="form-label">Select Card Type:</label>
+            <select id="year-card-type" class="form-select">
+                <option value="">Select a card type first</option>
+            </select>
+        </div>
+        <div>
+            <label class="form-label">Year:</label>
+            <input type="number" id="new-year" class="form-input" placeholder="2024" min="1900" max="2030">
+        </div>
+        <button class="btn" onclick="addYear()" style="width: 100%;">Add Year</button>
+    </div>
+
+    <!-- Add Set -->
+    <div class="management-card">
+        <h3>Add Set</h3>
+        <div>
+            <label class="form-label">Select Card Type:</label>
+            <select id="set-card-type" onchange="updateSetYearOptions()" class="form-select">
+                <option value="">Select a card type first</option>
+            </select>
+        </div>
+        <div>
+            <label class="form-label">Select Year:</label>
+            <select id="set-year" class="form-select">
+                <option value="">Select a year</option>
+            </select>
+        </div>
+        <div>
+            <label class="form-label">Set Name:</label>
+            <input type="text" id="new-set-name" class="form-input" placeholder="e.g., Topps Chrome, Base Set">
+        </div>
+        <button class="btn" onclick="addSet()" style="width: 100%;">Add Set</button>
+    </div>
+
+    <!-- Add Cards to Set -->
+    <div class="management-card">
+        <h3>Add Cards to Set</h3>
+        <div>
+            <label class="form-label">Select Card Type:</label>
+            <select id="cards-card-type" onchange="updateCardsYearOptions()" class="form-select">
+                <option value="">Select a card type first</option>
+            </select>
+        </div>
+        <div>
+            <label class="form-label">Select Year:</label>
+            <select id="cards-year" onchange="updateCardsSetOptions()" class="form-select">
+                <option value="">Select a year</option>
+            </select>
+        </div>
+        <div>
+            <label class="form-label">Select Set:</label>
+            <select id="cards-set" class="form-select">
+                <option value="">Select a set</option>
+            </select>
+        </div>
+        <div>
+            <label class="form-label">Card Name:</label>
+            <input type="text" id="new-card-name" class="form-input" placeholder="e.g., Mike Trout">
+        </div>
+        <div>
+            <label class="form-label">Card Number:</label>
+            <input type="number" id="new-card-number" class="form-input" placeholder="1" min="1">
+        </div>
+        <button class="btn" onclick="addCard()" style="width: 100%;">Add Card</button>
+    </div>
+</div>
+
+<!-- Current Catalog Structure -->
+<div style="margin-top: 40px;">
+    <h3 style="margin-bottom: 20px; color: #333;">Current Catalog Structure</h3>
+    <div class="management-card">
+        <div id="catalog-structure" class="catalog-structure">
+            <!-- Structure will be populated here -->
+        </div>
+    </div>
+</div>

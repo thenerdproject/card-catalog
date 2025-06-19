@@ -1,0 +1,316 @@
+[debug] [2025-06-19T03:33:57.094Z] ----------------------------------------------------------------------
+[debug] [2025-06-19T03:33:57.096Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Leon-\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-06-19T03:33:57.096Z] CLI Version:   14.7.0
+[debug] [2025-06-19T03:33:57.096Z] Platform:      win32
+[debug] [2025-06-19T03:33:57.097Z] Node Version:  v22.16.0
+[debug] [2025-06-19T03:33:57.097Z] Time:          Wed Jun 18 2025 21:33:57 GMT-0600 (Mountain Daylight Time)
+[debug] [2025-06-19T03:33:57.097Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-19T03:33:57.324Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-19T03:33:57.324Z] > authorizing via signed-in user (thenerdsprojects@gmail.com)
+[debug] [2025-06-19T03:33:57.325Z] [iam] checking project the-card-catalog for permissions ["firebase.projects.get"]
+[debug] [2025-06-19T03:33:57.325Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:33:57.325Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:33:57.326Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions [none]
+[debug] [2025-06-19T03:33:57.326Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions x-goog-quota-user=projects/the-card-catalog
+[debug] [2025-06-19T03:33:57.326Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-19T03:33:57.656Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions 200
+[debug] [2025-06-19T03:33:57.656Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-19T03:33:57.657Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:33:57.657Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:33:57.657Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-19T03:33:57.657Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/the-card-catalog
+[debug] [2025-06-19T03:33:58.451Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-06-19T03:33:58.451Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-19T03:33:58.451Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:33:58.451Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:33:58.451Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog [none]
+[debug] [2025-06-19T03:33:58.622Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog 200
+[debug] [2025-06-19T03:33:58.623Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog {"projectNumber":"927808442306","projectId":"the-card-catalog","lifecycleState":"ACTIVE","name":"The Card Catalog","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-18T22:57:53.941805Z"}
+[info] 
+[info] === Serving from 'C:\Users\Leon-\OneDrive\Documents\The Card Catalog'...
+[info] 
+[debug] [2025-06-19T03:33:58.625Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:33:58.625Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:33:58.625Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites 
+[debug] [2025-06-19T03:33:59.345Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites 200
+[debug] [2025-06-19T03:33:59.345Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites {"sites":[{"name":"projects/the-card-catalog/sites/the-card-catalog","defaultUrl":"https://the-card-catalog.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-06-19T03:33:59.345Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:33:59.345Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:33:59.345Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config [none]
+[debug] [2025-06-19T03:33:59.942Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config 200
+[debug] [2025-06-19T03:33:59.942Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"AIzaSyCP9-Bit0PHmYBD69IIesgQwEwQcHFblxw","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
+[debug] [2025-06-19T03:33:59.947Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:33:59.947Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:33:59.948Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog [none]
+[debug] [2025-06-19T03:34:00.127Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog 200
+[debug] [2025-06-19T03:34:00.127Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog {"projectId":"the-card-catalog","projectNumber":"927808442306","displayName":"The Card Catalog","name":"projects/the-card-catalog","resources":{"hostingSite":"the-card-catalog"},"state":"ACTIVE","etag":"1_fcbee0a8-179e-4683-9731-9d6778fca265"}
+[info] i  hosting[the-card-catalog]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[the-card-catalog]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [19/Jun/2025:03:34:03 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:03:34:03 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jun/2025:03:34:03 +0000] "GET /styles.css HTTP/1.1" 404 - "http://localhost:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:03:34:03 +0000] \"GET /styles.css HTTP/1.1\" 404 - \"http://localhost:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jun/2025:03:34:03 +0000] "GET /app.js HTTP/1.1" 404 - "http://localhost:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:03:34:03 +0000] \"GET /app.js HTTP/1.1\" 404 - \"http://localhost:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jun/2025:03:34:03 +0000] "GET /catalog.html HTTP/1.1" 404 - "http://localhost:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:03:34:03 +0000] \"GET /catalog.html HTTP/1.1\" 404 - \"http://localhost:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jun/2025:03:34:03 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://localhost:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:03:34:03 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://localhost:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jun/2025:03:34:03 +0000] "GET /dashboard.html HTTP/1.1" 404 - "http://localhost:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:03:34:03 +0000] \"GET /dashboard.html HTTP/1.1\" 404 - \"http://localhost:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jun/2025:03:34:03 +0000] "GET /manage.html HTTP/1.1" 404 - "http://localhost:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:03:34:03 +0000] \"GET /manage.html HTTP/1.1\" 404 - \"http://localhost:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[debug] [2025-06-19T03:37:36.853Z] ----------------------------------------------------------------------
+[debug] [2025-06-19T03:37:36.856Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Leon-\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-06-19T03:37:36.856Z] CLI Version:   14.7.0
+[debug] [2025-06-19T03:37:36.856Z] Platform:      win32
+[debug] [2025-06-19T03:37:36.856Z] Node Version:  v22.16.0
+[debug] [2025-06-19T03:37:36.857Z] Time:          Wed Jun 18 2025 21:37:36 GMT-0600 (Mountain Daylight Time)
+[debug] [2025-06-19T03:37:36.857Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-19T03:37:37.084Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-19T03:37:37.085Z] > authorizing via signed-in user (thenerdsprojects@gmail.com)
+[debug] [2025-06-19T03:37:37.085Z] [iam] checking project the-card-catalog for permissions ["firebase.projects.get"]
+[debug] [2025-06-19T03:37:37.085Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:37:37.086Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:37:37.086Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions [none]
+[debug] [2025-06-19T03:37:37.086Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions x-goog-quota-user=projects/the-card-catalog
+[debug] [2025-06-19T03:37:37.087Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-19T03:37:37.474Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions 200
+[debug] [2025-06-19T03:37:37.474Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-19T03:37:37.475Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:37:37.475Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:37:37.475Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-19T03:37:37.475Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/the-card-catalog
+[debug] [2025-06-19T03:37:38.152Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-06-19T03:37:38.152Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-19T03:37:38.152Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:37:38.152Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:37:38.152Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog [none]
+[debug] [2025-06-19T03:37:38.329Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog 200
+[debug] [2025-06-19T03:37:38.329Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog {"projectNumber":"927808442306","projectId":"the-card-catalog","lifecycleState":"ACTIVE","name":"The Card Catalog","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-18T22:57:53.941805Z"}
+[info] 
+[info] === Serving from 'C:\Users\Leon-\OneDrive\Documents\The Card Catalog'...
+[info] 
+[debug] [2025-06-19T03:37:38.331Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:37:38.332Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:37:38.332Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites 
+[debug] [2025-06-19T03:37:39.080Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites 200
+[debug] [2025-06-19T03:37:39.080Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites {"sites":[{"name":"projects/the-card-catalog/sites/the-card-catalog","defaultUrl":"https://the-card-catalog.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-06-19T03:37:39.080Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:37:39.080Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:37:39.080Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config [none]
+[debug] [2025-06-19T03:37:39.817Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config 200
+[debug] [2025-06-19T03:37:39.817Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"AIzaSyCP9-Bit0PHmYBD69IIesgQwEwQcHFblxw","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
+[debug] [2025-06-19T03:37:39.824Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:37:39.824Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:37:39.824Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog [none]
+[debug] [2025-06-19T03:37:40.225Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog 200
+[debug] [2025-06-19T03:37:40.225Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog {"projectId":"the-card-catalog","projectNumber":"927808442306","displayName":"The Card Catalog","name":"projects/the-card-catalog","resources":{"hostingSite":"the-card-catalog"},"state":"ACTIVE","etag":"1_fcbee0a8-179e-4683-9731-9d6778fca265"}
+[info] i  hosting[the-card-catalog]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[the-card-catalog]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [19/Jun/2025:03:37:49 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:03:37:49 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[debug] [2025-06-19T03:58:08.276Z] ----------------------------------------------------------------------
+[debug] [2025-06-19T03:58:08.279Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Leon-\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-06-19T03:58:08.279Z] CLI Version:   14.7.0
+[debug] [2025-06-19T03:58:08.279Z] Platform:      win32
+[debug] [2025-06-19T03:58:08.280Z] Node Version:  v22.16.0
+[debug] [2025-06-19T03:58:08.280Z] Time:          Wed Jun 18 2025 21:58:08 GMT-0600 (Mountain Daylight Time)
+[debug] [2025-06-19T03:58:08.280Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-19T03:58:08.504Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-19T03:58:08.504Z] > authorizing via signed-in user (thenerdsprojects@gmail.com)
+[debug] [2025-06-19T03:58:08.504Z] [iam] checking project the-card-catalog for permissions ["firebase.projects.get"]
+[debug] [2025-06-19T03:58:08.505Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:58:08.505Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:58:08.506Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions [none]
+[debug] [2025-06-19T03:58:08.506Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions x-goog-quota-user=projects/the-card-catalog
+[debug] [2025-06-19T03:58:08.506Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-19T03:58:09.603Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions 200
+[debug] [2025-06-19T03:58:09.603Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-19T03:58:09.604Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:58:09.604Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:58:09.604Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-19T03:58:09.604Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/the-card-catalog
+[debug] [2025-06-19T03:58:10.284Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-06-19T03:58:10.284Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-19T03:58:10.285Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:58:10.285Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:58:10.285Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog [none]
+[debug] [2025-06-19T03:58:10.458Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog 200
+[debug] [2025-06-19T03:58:10.458Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog {"projectNumber":"927808442306","projectId":"the-card-catalog","lifecycleState":"ACTIVE","name":"The Card Catalog","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-18T22:57:53.941805Z"}
+[info] 
+[info] === Serving from 'C:\Users\Leon-\OneDrive\Documents\The Card Catalog'...
+[info] 
+[debug] [2025-06-19T03:58:10.460Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:58:10.460Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:58:10.461Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites 
+[debug] [2025-06-19T03:58:11.157Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites 200
+[debug] [2025-06-19T03:58:11.157Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites {"sites":[{"name":"projects/the-card-catalog/sites/the-card-catalog","defaultUrl":"https://the-card-catalog.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-06-19T03:58:11.158Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:58:11.158Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:58:11.158Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config [none]
+[debug] [2025-06-19T03:58:11.903Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config 200
+[debug] [2025-06-19T03:58:11.904Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"AIzaSyCP9-Bit0PHmYBD69IIesgQwEwQcHFblxw","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
+[debug] [2025-06-19T03:58:11.911Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:58:11.911Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T03:58:11.911Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog [none]
+[debug] [2025-06-19T03:58:12.125Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog 200
+[debug] [2025-06-19T03:58:12.125Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog {"projectId":"the-card-catalog","projectNumber":"927808442306","displayName":"The Card Catalog","name":"projects/the-card-catalog","resources":{"hostingSite":"the-card-catalog"},"state":"ACTIVE","etag":"1_fcbee0a8-179e-4683-9731-9d6778fca265"}
+[info] i  hosting[the-card-catalog]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[the-card-catalog]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [19/Jun/2025:03:58:18 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:03:58:18 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jun/2025:03:58:18 +0000] "GET /styles.css HTTP/1.1" 404 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:03:58:18 +0000] \"GET /styles.css HTTP/1.1\" 404 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jun/2025:03:58:18 +0000] "GET /script.js HTTP/1.1" 404 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:03:58:18 +0000] \"GET /script.js HTTP/1.1\" 404 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[debug] [2025-06-19T04:00:53.315Z] ----------------------------------------------------------------------
+[debug] [2025-06-19T04:00:53.317Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Leon-\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-06-19T04:00:53.318Z] CLI Version:   14.7.0
+[debug] [2025-06-19T04:00:53.318Z] Platform:      win32
+[debug] [2025-06-19T04:00:53.318Z] Node Version:  v22.16.0
+[debug] [2025-06-19T04:00:53.318Z] Time:          Wed Jun 18 2025 22:00:53 GMT-0600 (Mountain Daylight Time)
+[debug] [2025-06-19T04:00:53.318Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-19T04:00:53.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-19T04:00:53.545Z] > authorizing via signed-in user (thenerdsprojects@gmail.com)
+[debug] [2025-06-19T04:00:53.545Z] [iam] checking project the-card-catalog for permissions ["firebase.projects.get"]
+[debug] [2025-06-19T04:00:53.546Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T04:00:53.546Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T04:00:53.547Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions [none]
+[debug] [2025-06-19T04:00:53.547Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions x-goog-quota-user=projects/the-card-catalog
+[debug] [2025-06-19T04:00:53.547Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-19T04:00:53.934Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions 200
+[debug] [2025-06-19T04:00:53.934Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-19T04:00:53.935Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T04:00:53.935Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T04:00:53.935Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-19T04:00:53.935Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/the-card-catalog
+[debug] [2025-06-19T04:00:54.569Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-06-19T04:00:54.569Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-19T04:00:54.570Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T04:00:54.570Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T04:00:54.570Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog [none]
+[debug] [2025-06-19T04:00:54.735Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog 200
+[debug] [2025-06-19T04:00:54.735Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog {"projectNumber":"927808442306","projectId":"the-card-catalog","lifecycleState":"ACTIVE","name":"The Card Catalog","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-18T22:57:53.941805Z"}
+[info] 
+[info] === Serving from 'C:\Users\Leon-\OneDrive\Documents\The Card Catalog'...
+[info] 
+[debug] [2025-06-19T04:00:54.737Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T04:00:54.737Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T04:00:54.738Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites 
+[debug] [2025-06-19T04:00:55.474Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites 200
+[debug] [2025-06-19T04:00:55.475Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites {"sites":[{"name":"projects/the-card-catalog/sites/the-card-catalog","defaultUrl":"https://the-card-catalog.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-06-19T04:00:55.475Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T04:00:55.475Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T04:00:55.475Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config [none]
+[debug] [2025-06-19T04:00:55.945Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config 200
+[debug] [2025-06-19T04:00:55.945Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"AIzaSyCP9-Bit0PHmYBD69IIesgQwEwQcHFblxw","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
+[debug] [2025-06-19T04:00:55.950Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T04:00:55.950Z] Checked if tokens are valid: true, expires at: 1750306639163
+[debug] [2025-06-19T04:00:55.950Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog [none]
+[debug] [2025-06-19T04:00:56.172Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog 200
+[debug] [2025-06-19T04:00:56.172Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog {"projectId":"the-card-catalog","projectNumber":"927808442306","displayName":"The Card Catalog","name":"projects/the-card-catalog","resources":{"hostingSite":"the-card-catalog"},"state":"ACTIVE","etag":"1_fcbee0a8-179e-4683-9731-9d6778fca265"}
+[info] i  hosting[the-card-catalog]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[the-card-catalog]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [19/Jun/2025:04:01:01 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:04:01:01 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jun/2025:04:01:01 +0000] "GET /script.js HTTP/1.1" 404 - "http://localhost:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:04:01:01 +0000] \"GET /script.js HTTP/1.1\" 404 - \"http://localhost:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jun/2025:04:01:01 +0000] "GET /styles.css HTTP/1.1" 404 - "http://localhost:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:04:01:01 +0000] \"GET /styles.css HTTP/1.1\" 404 - \"http://localhost:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[debug] [2025-06-19T04:02:28.898Z] ----------------------------------------------------------------------
+[debug] [2025-06-19T04:02:28.901Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Leon-\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-06-19T04:02:28.901Z] CLI Version:   14.7.0
+[debug] [2025-06-19T04:02:28.901Z] Platform:      win32
+[debug] [2025-06-19T04:02:28.901Z] Node Version:  v22.16.0
+[debug] [2025-06-19T04:02:28.902Z] Time:          Wed Jun 18 2025 22:02:28 GMT-0600 (Mountain Daylight Time)
+[debug] [2025-06-19T04:02:28.902Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-19T04:02:29.129Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-19T04:02:29.130Z] > authorizing via signed-in user (thenerdsprojects@gmail.com)
+[debug] [2025-06-19T04:02:29.130Z] [iam] checking project the-card-catalog for permissions ["firebase.projects.get"]
+[debug] [2025-06-19T04:02:29.130Z] Checked if tokens are valid: false, expires at: 1750306639163
+[debug] [2025-06-19T04:02:29.130Z] Checked if tokens are valid: false, expires at: 1750306639163
+[debug] [2025-06-19T04:02:29.131Z] > refreshing access token with scopes: []
+[debug] [2025-06-19T04:02:29.132Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-06-19T04:02:29.132Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-19T04:02:29.460Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-06-19T04:02:29.460Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-19T04:02:29.470Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions [none]
+[debug] [2025-06-19T04:02:29.470Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions x-goog-quota-user=projects/the-card-catalog
+[debug] [2025-06-19T04:02:29.470Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-19T04:02:29.800Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions 200
+[debug] [2025-06-19T04:02:29.800Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-19T04:02:29.801Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:02:29.801Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:02:29.801Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-19T04:02:29.801Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/the-card-catalog
+[debug] [2025-06-19T04:02:30.434Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-06-19T04:02:30.435Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-19T04:02:30.435Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:02:30.435Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:02:30.435Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog [none]
+[debug] [2025-06-19T04:02:30.594Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog 200
+[debug] [2025-06-19T04:02:30.595Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog {"projectNumber":"927808442306","projectId":"the-card-catalog","lifecycleState":"ACTIVE","name":"The Card Catalog","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-18T22:57:53.941805Z"}
+[info] 
+[info] === Serving from 'C:\Users\Leon-\OneDrive\Documents\The Card Catalog'...
+[info] 
+[debug] [2025-06-19T04:02:30.597Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:02:30.597Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:02:30.597Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites 
+[debug] [2025-06-19T04:02:31.236Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites 200
+[debug] [2025-06-19T04:02:31.236Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites {"sites":[{"name":"projects/the-card-catalog/sites/the-card-catalog","defaultUrl":"https://the-card-catalog.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-06-19T04:02:31.236Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:02:31.236Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:02:31.236Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config [none]
+[debug] [2025-06-19T04:02:31.725Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config 200
+[debug] [2025-06-19T04:02:31.725Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"AIzaSyCP9-Bit0PHmYBD69IIesgQwEwQcHFblxw","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
+[debug] [2025-06-19T04:02:31.731Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:02:31.731Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:02:31.731Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog [none]
+[debug] [2025-06-19T04:02:31.899Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog 200
+[debug] [2025-06-19T04:02:31.899Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog {"projectId":"the-card-catalog","projectNumber":"927808442306","displayName":"The Card Catalog","name":"projects/the-card-catalog","resources":{"hostingSite":"the-card-catalog"},"state":"ACTIVE","etag":"1_fcbee0a8-179e-4683-9731-9d6778fca265"}
+[info] i  hosting[the-card-catalog]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[the-card-catalog]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2025-06-19T04:03:01.567Z] ----------------------------------------------------------------------
+[debug] [2025-06-19T04:03:01.569Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Leon-\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-06-19T04:03:01.569Z] CLI Version:   14.7.0
+[debug] [2025-06-19T04:03:01.570Z] Platform:      win32
+[debug] [2025-06-19T04:03:01.570Z] Node Version:  v22.16.0
+[debug] [2025-06-19T04:03:01.570Z] Time:          Wed Jun 18 2025 22:03:01 GMT-0600 (Mountain Daylight Time)
+[debug] [2025-06-19T04:03:01.570Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-19T04:03:01.797Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-19T04:03:01.798Z] > authorizing via signed-in user (thenerdsprojects@gmail.com)
+[debug] [2025-06-19T04:03:01.798Z] [iam] checking project the-card-catalog for permissions ["firebase.projects.get"]
+[debug] [2025-06-19T04:03:01.798Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:03:01.799Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:03:01.799Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions [none]
+[debug] [2025-06-19T04:03:01.799Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions x-goog-quota-user=projects/the-card-catalog
+[debug] [2025-06-19T04:03:01.799Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-19T04:03:02.524Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions 200
+[debug] [2025-06-19T04:03:02.524Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-19T04:03:02.524Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:03:02.524Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:03:02.525Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-19T04:03:02.525Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/the-card-catalog
+[debug] [2025-06-19T04:03:03.104Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-06-19T04:03:03.104Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/the-card-catalog/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-19T04:03:03.104Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:03:03.104Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:03:03.104Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog [none]
+[debug] [2025-06-19T04:03:03.327Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog 200
+[debug] [2025-06-19T04:03:03.328Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/the-card-catalog {"projectNumber":"927808442306","projectId":"the-card-catalog","lifecycleState":"ACTIVE","name":"The Card Catalog","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-18T22:57:53.941805Z"}
+[info] 
+[info] === Serving from 'C:\Users\Leon-\OneDrive\Documents\The Card Catalog'...
+[info] 
+[debug] [2025-06-19T04:03:03.330Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:03:03.330Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:03:03.331Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites 
+[debug] [2025-06-19T04:03:03.976Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites 200
+[debug] [2025-06-19T04:03:03.976Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/the-card-catalog/sites {"sites":[{"name":"projects/the-card-catalog/sites/the-card-catalog","defaultUrl":"https://the-card-catalog.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-06-19T04:03:03.976Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:03:03.976Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:03:03.977Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config [none]
+[debug] [2025-06-19T04:03:04.664Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config 200
+[debug] [2025-06-19T04:03:04.664Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog/webApps/-/config {"projectId":"the-card-catalog","storageBucket":"the-card-catalog.firebasestorage.app","apiKey":"AIzaSyCP9-Bit0PHmYBD69IIesgQwEwQcHFblxw","authDomain":"the-card-catalog.firebaseapp.com","messagingSenderId":"927808442306"}
+[debug] [2025-06-19T04:03:04.669Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:03:04.670Z] Checked if tokens are valid: true, expires at: 1750309348460
+[debug] [2025-06-19T04:03:04.670Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog [none]
+[debug] [2025-06-19T04:03:04.833Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog 200
+[debug] [2025-06-19T04:03:04.834Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-card-catalog {"projectId":"the-card-catalog","projectNumber":"927808442306","displayName":"The Card Catalog","name":"projects/the-card-catalog","resources":{"hostingSite":"the-card-catalog"},"state":"ACTIVE","etag":"1_fcbee0a8-179e-4683-9731-9d6778fca265"}
+[info] i  hosting[the-card-catalog]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[the-card-catalog]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [19/Jun/2025:04:03:22 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:04:03:22 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jun/2025:04:03:22 +0000] "GET /styles.css HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:04:03:22 +0000] \"GET /styles.css HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [19/Jun/2025:04:03:22 +0000] "GET /script.js HTTP/1.1" 404 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Jun/2025:04:03:22 +0000] \"GET /script.js HTTP/1.1\" 404 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
